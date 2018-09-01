@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2047
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kidforce", "Kidforce\Kidforce.csproj", "{8AF314E1-6702-458A-9363-7EF3EAC6B7C0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8AF314E1-6702-458A-9363-7EF3EAC6B7C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AF314E1-6702-458A-9363-7EF3EAC6B7C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AF314E1-6702-458A-9363-7EF3EAC6B7C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AF314E1-6702-458A-9363-7EF3EAC6B7C0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8EF6E3BD-426C-459D-ABE4-3B3CB2A92ABC}
+	EndGlobalSection
+EndGlobal
