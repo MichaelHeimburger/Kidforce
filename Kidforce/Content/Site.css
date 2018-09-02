@@ -1,6 +1,7 @@
-﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+﻿
+
+footer {
+    background-color: #0A1426;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -21,4 +22,75 @@ input,
 select,
 textarea {
     max-width: 280px;
+}
+
+
+
+
+
+/*****************Navbar Styling******************/
+
+.navbar-container{
+    background-color:black;
+}
+.nav-logo-kfc {
+    height: 8vw;
+    min-height:60px;
+}
+.nav-a-kfc{
+    color:white;
+}
+.nav-a-kfc :hover {
+    color:white;
+    text-decoration:none;
+}
+
+
+
+/*****Index Style****/
+.index-row-1 { /**ROW ONE*/
+    height: 600px;
+    background-color: #0A1426;
+    display:flex;
+    justify-content:center;
+
+
+}
+.kfc-logo-big{
+    height:30vw;
+}
+
+
+
+
+.index-row-2 { /**ROW TWO*/
+    height: 400px;
+    background-color: #520E8E;
+}
+
+.kfc-product-content-container {
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+}
+
+.kfc-product-content {
+    height: 400px;
+}
+
+.kfc-product-text {
+    width: 100%;
+    background-color: lightgreen;
+}
+.index-row-3 {
+    height: 400px;
+    background-color: #77A3F3;
+}
+.index-row-4 {
+    height: 400px;
+    background-color: #115B5B;
+}
+.index-row-5 {
+    height: 400px;
+    background-color: #742947;
 }
