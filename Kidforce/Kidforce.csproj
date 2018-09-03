@@ -215,8 +215,10 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="images\kidforce pinball.png" />
     <Content Include="images\logo.jpg" />
     <Content Include="images\logot.png" />
+    <Content Include="images\pinball.png" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />

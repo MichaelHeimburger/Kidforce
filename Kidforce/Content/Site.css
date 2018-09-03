@@ -1,13 +1,16 @@
 ﻿
-
+body{
+    margin:0;
+    padding:0;
+}
 footer {
     background-color: #0A1426;
 }
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+  padding:0;
+  margin:0;
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
@@ -32,6 +35,7 @@ textarea {
 
 .navbar-container{
     background-color:black;
+   
 }
 .nav-logo-kfc {
     height: 8vw;
@@ -47,12 +51,21 @@ textarea {
 
 
 
-/*****Index Style****/
-.index-row-1 { /**ROW ONE*/
-    height: 600px;
+/*****Index Style****/ 
+.index-bg{
+
+    height:100%;
+    width:100%;
+    z-index:-503;
     background-color: #0A1426;
+    position:fixed;   
     display:flex;
     justify-content:center;
+}
+/**ROW ONE*/
+
+.index-row-1 {
+    height: 40vw;
 
 
 }
@@ -64,24 +77,31 @@ textarea {
 
 
 .index-row-2 { /**ROW TWO*/
-    height: 400px;
+
+    height: 25vw;
     background-color: #520E8E;
 }
-
+.row-2-carousel
+{
+    width:100%;
+}
+.kfc-product-image {
+    height: 25vw;
+}
 .kfc-product-content-container {
-    width: 400px;
+    width: 100%;
+    height:100%;
     display: flex;
     flex-direction: row;
+    justify-content:center;
 }
 
-.kfc-product-content {
-    height: 400px;
-}
 
-.kfc-product-text {
+
+/*.kfc-product-text {
     width: 100%;
     background-color: lightgreen;
-}
+}*/
 .index-row-3 {
     height: 400px;
     background-color: #77A3F3;
