@@ -3,24 +3,23 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>
+        Kidforce Collectibles
+    </title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
 </head>
 <body>
-    <nav class="navbar sticky-top navbar-dark navbar-container">
-        <div class="container">
-            <div class="navbar-header">
-                <a href="#"> <img class="nav-logo-kfc" src="~/images/logot.png" /></a>
-            </div>
-            <a class="nav-a-kfc" href="#">Location</a>
-            <a class="nav-a-kfc" href="#">Pinball</a>
-            <a class="nav-a-kfc" href="#">Calender</a>
-            <a class="nav-a-kfc" href="#">Events</a>
-        </div>
-    </nav>
+<div class="Kfc-Navbar">
+    <img class="kidforcelogo" src="~/images/logot.png" />
+    <div class="Kfc-Navbar-Links">
+        <a href="#">Pinball</a>
+        <a href="#">Calender</a>
+        <a href="#">Events</a>
+    </div>
 
+</div>
     <div class="container-fluid body-content">
         @RenderBody()
 
@@ -32,3 +31,15 @@
     @RenderSection("scripts", required: false)
 </body>
 </html>
+<script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function () {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+            document.getElementsByClassName("Kfc-Navbar")[0].style.display="flex"
+        } else {
+            document.getElementsByClassName("Kfc-Navbar")[0].style.display = "none";
+        }
+        prevScrollpos = currentScrollPos;
+    }
+</script>

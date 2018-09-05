@@ -9,8 +9,9 @@ footer {
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
-  padding:0;
-  margin:0;
+ overflow:hidden;
+ margin:0;
+ padding:0px;
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
@@ -33,41 +34,75 @@ textarea {
 
 /*****************Navbar Styling******************/
 
-.navbar-container{
-    background-color:black;
+.Kfc-Navbar {
+    width: 100%;
+    position: fixed;
+    z-index: 5000;
+    display: flex;
+    justify-content: space-between
+}
+
+.Kfc-Navbar-Links {
+    display: flex;
+    margin: 10px;
+}
+
+    .Kfc-Navbar-Links a {
+        margin-right: 10vw;
+        color: white;
+    }
+
+        .Kfc-Navbar-Links a:hover {
+            margin-right: 10vw;
+            color: white;
+            text-decoration: none;
+        }
+
+.kidforcelogo {
+    height: 60px;
+}
+/*****Index Style****/
+.index-bg {
+    height: 100%;
+    width: 100%;
+    z-index: -501;
+    background-color: #0A1426;
+    position: fixed;
+    display: flex;
+    justify-content: center;
    
 }
-.nav-logo-kfc {
-    height: 8vw;
-    min-height:60px;
+.index-bg-logo{
+    height:50px;
 }
-.nav-a-kfc{
-    color:white;
-}
-.nav-a-kfc :hover {
-    color:white;
-    text-decoration:none;
-}
-
-
-
-/*****Index Style****/ 
-.index-bg{
-
+.index-bg-img {
     height:100%;
     width:100%;
-    z-index:-503;
-    background-color: #0A1426;
-    position:fixed;   
-    display:flex;
-    justify-content:center;
+    z-index:-502;
+    grid-column:1 /span 1;
+    grid-row:1 /span 1;
+
+    position:fixed;
+  object-fit:cover;
+}
+.index-bg-screen {
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    margin: 0;
+    padding: 0;
+    object-fit: cover;
+    background-color: rgba(7, 7, 7, 0.69);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.index-bg-logo{
+    height:70vh;
 }
 /**ROW ONE*/
-
 .index-row-1 {
     height: 40vw;
-
-
 }
 .kfc-logo-big{
     height:30vw;
@@ -77,9 +112,8 @@ textarea {
 
 
 .index-row-2 { /**ROW TWO*/
-
     height: 25vw;
-    background-color: #520E8E;
+    background-color: #0A1426;
 }
 .row-2-carousel
 {
