@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>
+        Kidforce Collectibles - Comics, Games, Toys , and More!
+    </title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+  
+    <link href="Content/Site.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="Kfc-Navbar">
+        <img class="kidforcelogo" src="/images/logot.png" />
+        <div class="Kfc-Navbar-Links">
+            <p style="color:yellow;margin:30px;">UNDER CONSTRUCITON</p>
+            <a href="#">Pinball</a>
+            <a href="#">Calender</a>
+            <a href="#">Events</a>
+        </div>
+
+    </div>
+    <div class="index-bg ">
+        <div class="index-bg-screen">
+            <img class="index-bg-logo" src="/images/logot.png" />
+
+        </div>
+        <img class="index-bg-img" src="/images/kidforce shop.PNG" />
+
+    </div>
+    <div class="row index-row-1">
+
+    </div>
+    <div class="row index-row-2">
+
+        <div id="demo" class="carousel kfc-products slide row-2-carousel" data-ride="carousel">
+
+            <!-- Indicators -->
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="kfc-product-content-container">
+                        <img class="kfc-product-image" src="https://media.wizards.com/2018/grn/C2Zovat0Zo.jpg" />
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="kfc-product-content-container">
+                        <img class="kfc-product-image" src="/images/comics.jpg" />
+                        <div class="kfc-product-text">     Text</div>
+
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="kfc-product-content-container">
+                        <img class="kfc-product-image" src="/images/pinballmachines.jpg" />
+                        <div class="kfc-product-text">     Text</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+
+        </div>
+    </div>
+
+    <div class="row index-row-3">
+        <img class="kfc-row-3-pic-1" src="/images/kidforcepinballblack.png" />
+        <div class="row-3-pinball-center">
+            <p>
+                Fall Pinball League:
+                Starts Sept 16th <br />
+                10 week league <br />
+                Play 6 games each week<br />
+                FREE Entry for new players<br />
+                All ages and skill levels
+            </p>
+            <a href="https://kidforcecollectibles-developer-edition.na30.force.com/LeagueHome/" class="pinball-button">Register Now</a>
+        </div>
+        <img class="kfc-row-3-pic-2" src="~/images/pinball.png" />
+    </div>
+    <div class="row index-row-4">
+        <img class="calender" src="/images/september calender.jpg" />
+        <div class="row-4-txt">
+            <p>Events</p>
+        </div>
+        <div></div>
+    </div>
+
+
+
+
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementsByClassName("Kfc-Navbar")[0].style.display = "flex";
+
+            } else {
+                document.getElementsByClassName("Kfc-Navbar")[0].style.display = "none";
+
+            }
+            prevScrollpos = currentScrollPos;
+        }
+    </script>
+
+</body>
+
+</html>

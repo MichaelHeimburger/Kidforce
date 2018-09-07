@@ -1,0 +1,204 @@
+﻿p {
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    background-color: #0A1426;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    overflow: hidden;
+    margin: 0;
+    padding: 0px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+
+
+
+
+/*****************Navbar Styling******************/
+
+.Kfc-Navbar {
+    width: 100%;
+    position: fixed;
+    z-index: 5000;
+    display: flex;
+    justify-content: space-between;
+    animation-name: gobar;
+    animation-duration: .5s;
+}
+
+@keyframes gobar {
+    from {
+        top: -20vw;
+    }
+
+    to {
+        top: 0;
+    }
+}
+
+.Kfc-Navbar-Links {
+    display: flex;
+    margin: 10px;
+}
+
+    .Kfc-Navbar-Links a {
+        margin-right: 10vw;
+        color: white;
+        text-shadow: -1px -1px 4px black;
+    }
+
+        .Kfc-Navbar-Links a:hover {
+            margin-right: 10vw;
+            color: white;
+            text-decoration: none;
+        }
+
+.kidforcelogo {
+    height: 60px;
+}
+/*****Index Style****/
+.index-bg {
+    height: 100%;
+    width: 100%;
+    z-index: -501;
+    background-color: #0A1426;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+}
+
+.index-bg-logo {
+    height: 50px;
+}
+
+.index-bg-img {
+    height: 100%;
+    width: 100%;
+    z-index: -502;
+    grid-column: 1 /span 1;
+    grid-row: 1 /span 1;
+    position: fixed;
+    object-fit: cover;
+}
+
+.index-bg-screen {
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    margin: 0;
+    padding: 0;
+    object-fit: cover;
+    background-color: rgba(7, 7, 7, 0.69);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.index-bg-logo {
+    height: 60vh;
+}
+/**ROW ONE*/
+.index-row-1 {
+    height: 80vh;
+}
+
+
+
+
+
+.index-row-2 { /**ROW TWO*/
+    height: 40vw;
+    background-color: #212121;
+}
+/**Carasaul******/
+.kfc-products {
+    overflow: hidden
+}
+
+.row-2-carousel {
+    width: 100%;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    height: 10vh;
+    width: 5vw;
+    background-size: 100%, 100%;
+}
+.kfc-product-image {
+    width: 100%;
+}
+
+
+.kfc-product-content-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+/** ROW 3 PINBALL*/
+.index-row-3 {
+    height: 400px;
+    background-color: white;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pinball-button {
+    color: white;
+    background-color: black;
+    padding: 10px;
+}
+
+.kfc-row-3-pic-2 {
+    height: 200px;
+    align-self:flex-end;
+    margin-right:30px;
+    margin-bottom:30px;
+}
+
+.kfc-row-3-pic-1 {
+    align-self: flex-start;
+    height: 200px;
+    margin-left:30px;
+    margin-top:30px;
+}
+
+.index-row-4 {
+    height: 500px;
+    background-color: #212121;
+    display:flex;   
+    align-items:center;
+    justify-content:space-between;
+}
+.row-4-txt p {
+    color: white;
+    font-size: 5vw;
+    align-self: flex-start;
+    text-shadow: -7px -3px black;
+}
+
+.calender {
+    margin-left: 50px;
+    height: 400px;
+}
+
+.index-row-5 {
+    height: 400px;
+    background-color: #212121
+}
