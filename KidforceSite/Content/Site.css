@@ -14,7 +14,7 @@ footer {
 .body-content {
     overflow: hidden;
     margin: 0;
-    padding: 0px;
+    
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
@@ -119,8 +119,8 @@ footer {
 
 
 
-
-.index-row-2 { /**ROW TWO*/
+/**ROW TWO*/
+.index-row-2 { 
     height: 40vw;
     background-color: #212121;
 }
@@ -128,7 +128,29 @@ footer {
 .kfc-products {
     overflow: hidden
 }
-
+.kfc-product-content-container {
+    width: 100%;
+    height: 40vw;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: center;
+    background-size: cover;
+}
+.kfc-product-image{
+    max-height:20vw;
+    margin:5vh
+}
+.header-text {
+    font-size: 10vw;
+    color: white;
+    text-shadow: -1px -2px black;
+}
+.content-text {
+    font-size:2vw;
+    color: white;
+    text-shadow: -1px -2px black;
+}
 .row-2-carousel {
     width: 100%;
 }
@@ -138,67 +160,63 @@ footer {
     width: 5vw;
     background-size: 100%, 100%;
 }
-.kfc-product-image {
-    width: 100%;
-}
 
 
-.kfc-product-content-container {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
 /** ROW 3 PINBALL*/
 .index-row-3 {
-    height: 400px;
-    background-color: white;
+    height: 60vw;
+    max-height:500px;
+    background-color: #212121;
     align-content: center;
     align-items: center;
     justify-content: space-between;
 }
 
+.row-3-txt p {
+    color: white;
+    font-size: 6vw;
+    align-self: flex-start;
+    text-shadow: -7px -3px black;
+}
+
+.calendar {
+    margin-left: 50px;
+    height: 50vw;
+    max-height:400px;
+}
+
+
+.index-row-4 {
+    height: 60vw;
+    max-height: 400px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .pinball-button {
     color: white;
     background-color: black;
     padding: 10px;
 }
 
-.kfc-row-3-pic-2 {
+.kfc-row-4-pic-2 {
     height: 200px;
-    align-self:flex-end;
-    margin-right:30px;
-    margin-bottom:30px;
+    align-self: flex-end;
+    margin-right: 30px;
+    margin-bottom: 30px;
 }
 
-.kfc-row-3-pic-1 {
+.kfc-row-4-pic-1 {
     align-self: flex-start;
     height: 200px;
-    margin-left:30px;
-    margin-top:30px;
+    margin-left: 30px;
+    margin-top: 30px;
 }
-
-.index-row-4 {
+.index-row-5 {
     height: 500px;
     background-color: #212121;
-    display:flex;   
-    align-items:center;
-    justify-content:space-between;
 }
-.row-4-txt p {
-    color: white;
-    font-size: 5vw;
-    align-self: flex-start;
-    text-shadow: -7px -3px black;
-}
-
-.calender {
-    margin-left: 50px;
-    height: 400px;
-}
-
-.index-row-5 {
-    height: 400px;
-    background-color: #212121
+.kfcmap{
+    height:400px;
 }
