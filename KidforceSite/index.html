@@ -16,7 +16,7 @@
     <link href="Content/Site.css" rel="stylesheet" />
 </head>
 <body>
-    <div class="Kfc-Navbar">
+    <!--<div class="Kfc-Navbar">
         <img class="kidforcelogo" src="/images/logot.png" />
         <div class="Kfc-Navbar-Links">
             <p style="color:yellow;margin:30px;">UNDER CONSTRUCTION</p>
@@ -24,22 +24,18 @@
             <a href="#">Calendar</a>
             <a href="#">Events</a>
         </div>
-
-    </div>
+    </div>-->
     <div class="body-content">
         <div class="index-bg ">
-            <div class="index-bg-screen">
-                <img class="index-bg-logo" src="/images/logot.png" />
-
-            </div>
+            <div class="index-bg-screen"> </div> <!--overlayed a dark screen instead of doctoring img-->
             <img class="index-bg-img" src="/images/kidforce shop.PNG" />
 
         </div>
         <div class="row index-row-1">
-
+            <img class="index-bg-logo" src="/images/logot.png" />
         </div>
-        <div  class="row kfc-product-carousel">
-            <div  id="demo" class="carousel kfc-products slide row-2-carousel" data-ride="carousel">
+        <div class="row kfc-product-carousel">
+            <div id="demo" class="carousel kfc-products slide row-2-carousel" data-ride="carousel">
 
                 <!-- Indicators -->
                 <!-- The slideshow -->
@@ -91,19 +87,20 @@
             </div>
         </div>
         <div class="row kfc-store-info">
-            <h1>Our Store Features:</h1>
-            <ul class="kfc-store-info-list">
-                <li><img class="kfc-store-info-icon" src="images/tableico.png" />Giant play-area for your gaming needs and Magic the gathering events hosted daily</li>
-                <li><img class="kfc-store-info-icon" src="images/comicico.png"/>A Large selection of the latest comics. As well as a large amount of back-issues of your favorite series.</li>
-                <li><img class="kfc-store-info-icon" src="images/toyico.png" />Collection of rare collectibles and toys for every generation</li>
-                <li><img class="kfc-store-info-icon" src="images/cardico.png" />Huge variety of trading card singles, packs, and accessories</li>
-                <li><img class="kfc-store-info-icon" src="images/gamesico.png"/>A wide assortment of both new and classic games</li>
-                <li><img class="kfc-store-info-icon" src="images/pinballico.png"/>Multiple Pinball Machines on site and leagues for all levels of players</li>
-            </ul>
+            <h1>Store Features</h1>
+            <div class="kfc-store-info-list">
+                <div class="kfc-store-li"><img class="kfc-store-info-icon" src="images/tableico.png" /><p>Giant play-area for your gaming needs and Magic the gathering events hosted daily</p></div>
+                <div class="kfc-store-li"><img class="kfc-store-info-icon" src="images/comicico.png" /><p>A Large selection of the latest comics. As well as a large amount of back-issues of your favorite series.</p></div>
+                <div class="kfc-store-li"><img class="kfc-store-info-icon" src="images/toyico.png" /><p>Collection of rare collectibles and toys for every generation</p></div>
+                <div class="kfc-store-li"><img class="kfc-store-info-icon" src="images/cardico.png" /><p>Huge variety of trading card singles, packs, and accessories</p></div>
+                <div class="kfc-store-li"><img class="kfc-store-info-icon" src="images/gamesico.png" /><p>A wide assortment of both new and classic games</p></div>
+                <div class="kfc-store-li"><img class="kfc-store-info-icon" src="images/pinballico.png" /><p>Multiple Pinball Machines on site and leagues for all levels of players</p></div>
+            </div>
 
         </div>
         <div class="row kfc-pinball">
-            <!--<img class="kfc-pinball-pic-1" src="/images/kidforcepinballblack.png" />-->
+            <h1>Pinball League</h1>
+            <div class="kfc-pinball-container">
             <div class="kfc-pinball-center">
                 <p>
                     Fall Pinball League:
@@ -114,25 +111,49 @@
                     All ages and skill levels
                 </p>
                 <a href="https://kidforcecollectibles-developer-edition.na30.force.com/LeagueHome/" class="pinball-button">Register Now</a>
-            </div>.
-
+            </div>
             <img class="kfc-pinball-pic-2 corner-ico" src="/images/pinball.png" />
-
+            </div>
         </div>
         <div class="row kfc-events">
-
-            <img class="calendar" src="/images/september calender.jpg" />
-            <div class="kfc-events-txt">
-                <p>Events</p>
+            <h1>Events</h1>
+            <div class="kfc-calander-container">
+                <img class="calendar" src="/images/september calender.jpg" />
             </div>
         </div>
 
         <div class="row kfc-contact">
-            <div class="kfc-contact-col"><p>Kidforce Collectibles</p>
-            <ul>
-                <li>Call us at:440-364-9337</li>
-                <li>Message us on Facebook:</li>
-                </ul></div>
+            <div class="kfc-contact-col">
+                <p>Come Visit!</p>
+                <ul>
+                    <li>Kidforce Collectibles</li>
+                    <li>103 Front St</li>
+                    <li>Berea, OH</li>
+                </ul>
+            </div>
+            <div class="kfc-contact-col">
+                <p>Hours:</p>
+                <ul>
+                    <li>Monday	3–10PM</li>
+                    <li>Tuesday	3–10PM</li>
+                    <li>Wednesday	12–10PM</li>
+                    <li>Thursday	3–10PM</li>
+                    <li>Friday	3–10PM</li>
+                    <li>Saturday	11–6PM</li>
+                    <li>Sunday	11–5PM</li>
+                </ul>
+            </div>
+
+            <div class="kfc-contact-col">
+                <p>Feel free to contact us!</p>
+                <ul>
+                    <li>440-364-9337</li>
+                    <li>
+                        <a class="facebooklink" href="https://www.facebook.com/kidforce/"><img class="facebookico" src="images/facebookico.png" />Message us on Facebook </a>
+                    </li>
+                
+                </ul>
+            </div>
         </div>
         <style>
   
