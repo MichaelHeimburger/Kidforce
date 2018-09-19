@@ -147,7 +147,7 @@
             <div class="kfc-contact-col">
                 <p>Feel free to contact us!</p>
                 <ul>
-                    <li>440-364-9337</li>
+                    <li>440-239-7777</li>
                     <li>
                         <a class="facebooklink" href="https://www.facebook.com/kidforce/"><img class="facebookico" src="images/facebookico.png" />Message us on Facebook </a>
                     </li>
@@ -181,10 +181,12 @@
             var containerBackrground = document.getElementsByClassName('kfc-product-content-container');
             for (i = 0; i < headerText.length; i++) {
                 headerText[i].textContent = data[i].Header;
-                contentText[i].textContent = data[i].Header;
+                contentText[i].textContent = data[i].ContentText;
 
                 if (data[i].BGPicture != "") {
                     containerBackrground[i].style.background = 'url(' + data[i].BGPicture + ')';
+                    containerBackrground[i].style.backgroundRepeat = "no-repeat";
+                    containerBackrground[i].style.backgroundSize = "cover";
                 }
 
                 if (data[i].ProductPicture != "") {
@@ -194,14 +196,25 @@
             }
 
         }
-
+        
 
         window.addEventListener('DOMContentLoaded', init)
     </script>
+    <style>
+        .kfc-product-content-container {
+            width: 100%;
+         
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            background-size: cover;
+         
+        }
+    </style>
 
 
-
-    <script>
+    <!--<script>
         var prevScrollpos = window.pageYOffset;
         window.onscroll = function () {
             var currentScrollPos = window.pageYOffset;
@@ -214,7 +227,7 @@
             }
             prevScrollpos = currentScrollPos;
         }
-    </script>
+    </script>-->
 
 </body>
 

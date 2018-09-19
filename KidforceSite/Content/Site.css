@@ -134,7 +134,7 @@ footer {
     flex-direction: row;
     align-items:center;
     justify-content: center;
-    background-size: cover;
+
 }
 .kfc-product-image{
     max-height:20vw;
@@ -187,9 +187,8 @@ footer {
 .kfc-pinball {
     padding:20px;
     height: 60vw;
-    max-height: 400px;
+    max-height:500px;
     background-color: white;
-    overflow:auto;
 }
 .kfc-pinball-container {
     width: 100%;
