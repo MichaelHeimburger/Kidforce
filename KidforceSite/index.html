@@ -2,6 +2,9 @@
 <html>
 <head>
     <meta charset="utf-8" />
+    <meta name="description" content="Kidforce Collectible's official website offering you the latest information related to the store located in downtown Bserea.">
+    <meta name="keywords" content="MTG,Magic The Gathering,Pinball,Cleveland Pinball,Berea,Kidforce, Kidforce Collectibles, Collectibles, Comics, Games, Toys" />
+    <meta name="author" content="Kidforce Collectibles">
     <title>
         Kidforce Collectibles - Comics, Games, Toys , and More!
     </title>
@@ -168,29 +171,29 @@
             Tabletop.init({
                 key: publicSpreadsheetUrl,
                 callback: showInfo,
-                simpleSheet: true
+                simpleSheet: false
             })
         }
 
         function showInfo(data, tabletop) {
-            console.log(data);
-            console.log(data[0].Header);
             var headerText = document.getElementsByClassName('header-text');
             var contentText = document.getElementsByClassName('content-text');
             var productImg = document.getElementsByClassName('kfc-product-image');
             var containerBackrground = document.getElementsByClassName('kfc-product-content-container');
+            if (data.Calendar.elements[0].Calendar != "")
+                document.getElementsByClassName("calendar")[0].src = data.Calendar.elements[0].Calendar;
             for (i = 0; i < headerText.length; i++) {
-                headerText[i].textContent = data[i].Header;
-                contentText[i].textContent = data[i].ContentText;
+                headerText[i].textContent = data.Banner.elements[i].Header;
+                contentText[i].textContent = data.Banner.elements[i].ContentText;
 
-                if (data[i].BGPicture != "") {
-                    containerBackrground[i].style.background = 'url(' + data[i].BGPicture + ')';
+                if (data.Banner.elements[i].BGPicture != "") {
+                    containerBackrground[i].style.background = 'url(' + data.Banner.elements[i].BGPicture + ')';
                     containerBackrground[i].style.backgroundRepeat = "no-repeat";
                     containerBackrground[i].style.backgroundSize = "cover";
                 }
 
-                if (data[i].ProductPicture != "") {
-                    productImg[i].src = data[i].ProductPicture;
+                if (data.Banner.elements[i].ProductPicture != "") {
+                    productImg[i].src = data.Banner.elements[i].ProductPicture;
                 }
 
             }
